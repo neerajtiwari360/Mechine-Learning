@@ -1,0 +1,14 @@
+This is an intuition-based argument for why it works:
+Let’s say we run a neural network and it achieves low bias and high variance (we do a great job of explaining the training set, 
+but a poor job of generalizing to the cross validation or the test set).
+
+In order to reduce the variance issue (the overfitting issue), we introduce dropout, which randomly goes through and drops nodes.
+The reason why this works is because nodes are unequal in their explanatory power in the training set.
+
+Imagine you have the following network, and the node highlighted (blue, red circle) is doing awesome work for us and sending a 
+signal that helps us classify the end result well. This node is so great that when we run backpropogation the neural network 
+optimizes itself by giving this node a very high weight.
+
+
+
+
